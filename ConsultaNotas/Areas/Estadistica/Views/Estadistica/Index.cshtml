@@ -1,4 +1,4 @@
-﻿@model List<ConsultaNotas.Data.Calificaciones>
+﻿@model List<ConsultaNotas.Models.Calificaciones>
 @{
     var suma = Model.Where(y => y.CodigoCategoria != 0).Sum(x => x.PsPrimeraEvalucionParcial).ToString("N");
     var promedio = Math.Round(Convert.ToDecimal(suma) / Model.Where(x => x.CodigoCategoria != 0).Count(), 2);

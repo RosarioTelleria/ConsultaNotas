@@ -1,6 +1,7 @@
 ﻿using ConsultaNotas.Areas.Estadistica.Controllers;
 using ConsultaNotas.Contrato;
 using ConsultaNotas.Data;
+using ConsultaNotas.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,9 +9,9 @@ namespace ConsultaNotas.Areas.Estadistica.DataAccess
 {
     public class EstadisticaDataAccess : IEstadistica
     {
-        private readonly ApplicationDbContext _dbcontex;
+        private readonly ConsultaNotasDBContext _dbcontex;
         
-        public EstadisticaDataAccess(ApplicationDbContext dbcontex)
+        public EstadisticaDataAccess(ConsultaNotasDBContext dbcontex)
         {
             _dbcontex = dbcontex;
         }

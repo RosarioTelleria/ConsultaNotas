@@ -1,4 +1,5 @@
 ﻿using ConsultaNotas.Data;
+using ConsultaNotas.Models;
 
 namespace ConsultaNotas.Contrato
 {
